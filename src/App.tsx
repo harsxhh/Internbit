@@ -10,7 +10,7 @@ interface Image {
   photographer: string;
 }
 
-const API_KEY = "nna1gZAjGjWSOHzJD9sWzHXU7rk11e0bvKfuVXue13RdnVaOnIXinj3X"; // Replace with your Pexels API key
+const API_KEY = "your_key"; // Replace with your Pexels API key
 const API_URL = "https://api.pexels.com/v1/curated?per_page=21"; // Fetch only 12 images
 
 const App: React.FC = () => {
