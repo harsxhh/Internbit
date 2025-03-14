@@ -1,54 +1,84 @@
-# React + TypeScript + Vite
+# 📸 Responsive Image Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌟 Overview
+This project is a **fully responsive** image gallery that dynamically fetches images from the **Pexels API** and displays them in a **masonry-style layout**. Users can click on images to open them in a **lightbox viewer** with next and previous navigation options.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- 🖼️ **Responsive Grid Layout** – Uses **CSS Grid & Flexbox** to adjust dynamically to different screen sizes.
+- 🔳 **Masonry Effect** – Ensures efficient use of space with column-based layout.
+- 🔍 **Lightbox Viewer** – Click on images to view them in full-screen with **Next/Previous navigation**.
+- 🔄 **API Integration** – Fetches high-quality images from **Pexels API** dynamically.
+- 🎨 **Smooth Animations** – Includes **hover effects, transitions**, and a seamless user experience.
+- 📱 **Mobile-Friendly** – Works perfectly on **desktop, tablet, and mobile devices**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
+- **Frontend:** React (TypeScript)
+- **Styling:** CSS (Flexbox, CSS Grid, Media Queries)
+- **API:** Pexels API (for fetching images)
+- **State Management:** React Hooks
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+Make sure you have the following installed on your system:
+- **Node.js** (v14 or later)
+- **npm** or **yarn**
+
+### 📥 Installation
+
+1️⃣ **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/responsive-image-gallery.git
+   cd responsive-image-gallery
+   ```
+
+2️⃣ **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3️⃣ **Set up Pexels API Key:**
+   - Create a `.env` file in the root directory and add your **Pexels API key**:
+     ```sh
+     REACT_APP_PEXELS_API_KEY=your_api_key_here
+     ```
+
+4️⃣ **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+---
+
+## 🎮 Usage Guide
+- 🔄 The gallery **automatically fetches images** when the page loads.
+- 🖱️ **Click on an image** to open it in the **lightbox viewer**.
+- ⏩ Use the **"Next" and "Previous" buttons** to navigate between images.
+- 📏 Resize the browser window to see the **responsive design in action**.
+
+---
+
+## 📁 Folder Structure
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+/responsive-image-gallery
+│── /src
+│   │
+│   │── App.tsx
+│   │── index.tsx
+│   │── Gallery.tsx
+│   │── Gallery.tsx
+│   │── Lightbox.tsx
+│   │── Lightbox.tsx
+│── /public
+│── .env.example
+│── package.json
+│── README.md
 ```
+For any questions or contributions, feel free to reach out via **[GitHub](https://github.com/harsxhh)** or email **[harshydv0040@gmail.com](mailto:harshydv0040@gmail.com)**.
+
